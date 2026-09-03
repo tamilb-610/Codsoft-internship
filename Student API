@@ -114,3 +114,7 @@ router.delete("/:id", async (req, res) => {
 });
 
 module.exports = router;
+
+const studentRoutes = require("./routes/studentRoutes");
+
+app.use("/api/students", studentRoutes);
